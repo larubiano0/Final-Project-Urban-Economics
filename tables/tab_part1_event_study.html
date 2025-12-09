@@ -1,0 +1,518 @@
+<!-- preamble start -->
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinytable_ysrk0h6gbznidwpm2uph</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+<!-- preamble end -->
+
+    <script>
+
+      function styleCell_ysrk0h6gbznidwpm2uph(i, j, css_id) {
+          var table = document.getElementById("tinytable_ysrk0h6gbznidwpm2uph");
+          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
+      }
+      function spanCell_ysrk0h6gbznidwpm2uph(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_ysrk0h6gbznidwpm2uph");
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+        }
+
+        // Get all cells that need to be removed
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue; // Skip the target cell
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) {
+              cellsToRemove.push(cell);
+            }
+          }
+        }
+
+        // Remove all cells
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // Set rowspan and colspan of the target cell if it exists
+        if (targetCell) {
+          targetCell.rowSpan = rowspan;
+          targetCell.colSpan = colspan;
+        }
+      }
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '103', j: 1 },  ], css_id: 'tinytable_css_fsoe0688ljbihdp5qnsw',}, 
+          { positions: [ { i: '92', j: 1 },  ], css_id: 'tinytable_css_lc9i2b8bnqzye5mu993g',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '6', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '12', j: 1 }, { i: '13', j: 1 }, { i: '14', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 }, { i: '17', j: 1 }, { i: '18', j: 1 }, { i: '19', j: 1 }, { i: '20', j: 1 }, { i: '21', j: 1 }, { i: '22', j: 1 }, { i: '23', j: 1 }, { i: '24', j: 1 }, { i: '25', j: 1 }, { i: '26', j: 1 }, { i: '27', j: 1 }, { i: '28', j: 1 }, { i: '29', j: 1 }, { i: '30', j: 1 }, { i: '31', j: 1 }, { i: '32', j: 1 }, { i: '33', j: 1 }, { i: '34', j: 1 }, { i: '35', j: 1 }, { i: '36', j: 1 }, { i: '37', j: 1 }, { i: '38', j: 1 }, { i: '39', j: 1 }, { i: '40', j: 1 }, { i: '41', j: 1 }, { i: '42', j: 1 }, { i: '43', j: 1 }, { i: '44', j: 1 }, { i: '45', j: 1 }, { i: '46', j: 1 }, { i: '47', j: 1 }, { i: '48', j: 1 }, { i: '49', j: 1 }, { i: '50', j: 1 }, { i: '51', j: 1 }, { i: '52', j: 1 }, { i: '53', j: 1 }, { i: '54', j: 1 }, { i: '55', j: 1 }, { i: '56', j: 1 }, { i: '57', j: 1 }, { i: '58', j: 1 }, { i: '59', j: 1 }, { i: '60', j: 1 }, { i: '61', j: 1 }, { i: '62', j: 1 }, { i: '63', j: 1 }, { i: '64', j: 1 }, { i: '65', j: 1 }, { i: '66', j: 1 }, { i: '67', j: 1 }, { i: '68', j: 1 }, { i: '69', j: 1 }, { i: '70', j: 1 }, { i: '71', j: 1 }, { i: '72', j: 1 }, { i: '73', j: 1 }, { i: '74', j: 1 }, { i: '75', j: 1 }, { i: '76', j: 1 }, { i: '77', j: 1 }, { i: '78', j: 1 }, { i: '79', j: 1 }, { i: '80', j: 1 }, { i: '81', j: 1 }, { i: '82', j: 1 }, { i: '83', j: 1 }, { i: '84', j: 1 }, { i: '85', j: 1 }, { i: '86', j: 1 }, { i: '87', j: 1 }, { i: '88', j: 1 }, { i: '89', j: 1 }, { i: '90', j: 1 }, { i: '91', j: 1 }, { i: '96', j: 1 }, { i: '93', j: 1 }, { i: '94', j: 1 }, { i: '95', j: 1 }, { i: '100', j: 1 }, { i: '97', j: 1 }, { i: '98', j: 1 }, { i: '99', j: 1 }, { i: '101', j: 1 }, { i: '102', j: 1 },  ], css_id: 'tinytable_css_goiyvdkq4cvaeumola2k',}, 
+          { positions: [ { i: '0', j: 1 },  ], css_id: 'tinytable_css_k4vgqai9arfuec09knlg',}, 
+          { positions: [ { i: '103', j: 0 },  ], css_id: 'tinytable_css_c0jd47z8d99c2ldwr6b0',}, 
+          { positions: [ { i: '92', j: 0 },  ], css_id: 'tinytable_css_tzp2d3q9xcajiwupz00m',}, 
+          { positions: [ { i: '1', j: 0 }, { i: '2', j: 0 }, { i: '3', j: 0 }, { i: '4', j: 0 }, { i: '5', j: 0 }, { i: '6', j: 0 }, { i: '7', j: 0 }, { i: '8', j: 0 }, { i: '9', j: 0 }, { i: '10', j: 0 }, { i: '11', j: 0 }, { i: '12', j: 0 }, { i: '13', j: 0 }, { i: '14', j: 0 }, { i: '15', j: 0 }, { i: '16', j: 0 }, { i: '17', j: 0 }, { i: '18', j: 0 }, { i: '19', j: 0 }, { i: '20', j: 0 }, { i: '21', j: 0 }, { i: '22', j: 0 }, { i: '23', j: 0 }, { i: '24', j: 0 }, { i: '25', j: 0 }, { i: '26', j: 0 }, { i: '27', j: 0 }, { i: '28', j: 0 }, { i: '29', j: 0 }, { i: '30', j: 0 }, { i: '31', j: 0 }, { i: '32', j: 0 }, { i: '33', j: 0 }, { i: '34', j: 0 }, { i: '35', j: 0 }, { i: '36', j: 0 }, { i: '37', j: 0 }, { i: '38', j: 0 }, { i: '39', j: 0 }, { i: '40', j: 0 }, { i: '41', j: 0 }, { i: '42', j: 0 }, { i: '43', j: 0 }, { i: '44', j: 0 }, { i: '45', j: 0 }, { i: '46', j: 0 }, { i: '47', j: 0 }, { i: '48', j: 0 }, { i: '49', j: 0 }, { i: '50', j: 0 }, { i: '51', j: 0 }, { i: '52', j: 0 }, { i: '53', j: 0 }, { i: '54', j: 0 }, { i: '55', j: 0 }, { i: '56', j: 0 }, { i: '57', j: 0 }, { i: '58', j: 0 }, { i: '59', j: 0 }, { i: '60', j: 0 }, { i: '61', j: 0 }, { i: '62', j: 0 }, { i: '63', j: 0 }, { i: '64', j: 0 }, { i: '65', j: 0 }, { i: '66', j: 0 }, { i: '67', j: 0 }, { i: '68', j: 0 }, { i: '69', j: 0 }, { i: '70', j: 0 }, { i: '71', j: 0 }, { i: '72', j: 0 }, { i: '73', j: 0 }, { i: '74', j: 0 }, { i: '75', j: 0 }, { i: '76', j: 0 }, { i: '77', j: 0 }, { i: '78', j: 0 }, { i: '79', j: 0 }, { i: '80', j: 0 }, { i: '81', j: 0 }, { i: '82', j: 0 }, { i: '83', j: 0 }, { i: '84', j: 0 }, { i: '85', j: 0 }, { i: '86', j: 0 }, { i: '87', j: 0 }, { i: '88', j: 0 }, { i: '89', j: 0 }, { i: '90', j: 0 }, { i: '91', j: 0 }, { i: '96', j: 0 }, { i: '93', j: 0 }, { i: '94', j: 0 }, { i: '95', j: 0 }, { i: '100', j: 0 }, { i: '97', j: 0 }, { i: '98', j: 0 }, { i: '99', j: 0 }, { i: '101', j: 0 }, { i: '102', j: 0 },  ], css_id: 'tinytable_css_69wcwlz3aais3q98nw9q',}, 
+          { positions: [ { i: '0', j: 0 },  ], css_id: 'tinytable_css_guxxnm9ruvkvk1d7lviy',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_ysrk0h6gbznidwpm2uph(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+      /* tinytable css entries after */
+      .table td.tinytable_css_fsoe0688ljbihdp5qnsw, .table th.tinytable_css_fsoe0688ljbihdp5qnsw { text-align: center; border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_lc9i2b8bnqzye5mu993g, .table th.tinytable_css_lc9i2b8bnqzye5mu993g { text-align: center; border-bottom: solid black 0.05em; }
+      .table td.tinytable_css_goiyvdkq4cvaeumola2k, .table th.tinytable_css_goiyvdkq4cvaeumola2k { text-align: center; }
+      .table td.tinytable_css_k4vgqai9arfuec09knlg, .table th.tinytable_css_k4vgqai9arfuec09knlg { text-align: center; border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_c0jd47z8d99c2ldwr6b0, .table th.tinytable_css_c0jd47z8d99c2ldwr6b0 { text-align: left; border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_tzp2d3q9xcajiwupz00m, .table th.tinytable_css_tzp2d3q9xcajiwupz00m { text-align: left; border-bottom: solid black 0.05em; }
+      .table td.tinytable_css_69wcwlz3aais3q98nw9q, .table th.tinytable_css_69wcwlz3aais3q98nw9q { text-align: left; }
+      .table td.tinytable_css_guxxnm9ruvkvk1d7lviy, .table th.tinytable_css_guxxnm9ruvkvk1d7lviy { text-align: left; border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    </style>
+    <div class="container">
+      <table class="table table-borderless" id="tinytable_ysrk0h6gbznidwpm2uph" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing='true'>
+        <thead>
+        
+              <tr>
+                <th scope="col" data-row="0" data-col="0"> </th>
+                <th scope="col" data-row="0" data-col="1">Event-study FE</th>
+              </tr>
+        </thead>
+        <tfoot><tr><td colspan='2'>+ p &lt; 0.1, * p &lt; 0.05, ** p &lt; 0.01, *** p &lt; 0.001</td></tr></tfoot>
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="0">event_time = -22 × distance_used</td>
+                  <td data-row="1" data-col="1">−0.307</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="0"></td>
+                  <td data-row="2" data-col="1">(0.352)</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="0">event_time = -21 × distance_used</td>
+                  <td data-row="3" data-col="1">−0.288</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="0"></td>
+                  <td data-row="4" data-col="1">(0.363)</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="0">event_time = -20 × distance_used</td>
+                  <td data-row="5" data-col="1">0.234</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="0"></td>
+                  <td data-row="6" data-col="1">(0.346)</td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="0">event_time = -19 × distance_used</td>
+                  <td data-row="7" data-col="1">−0.043</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="0"></td>
+                  <td data-row="8" data-col="1">(0.383)</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="0">event_time = -18 × distance_used</td>
+                  <td data-row="9" data-col="1">−0.497</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="0"></td>
+                  <td data-row="10" data-col="1">(0.323)</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="0">event_time = -17 × distance_used</td>
+                  <td data-row="11" data-col="1">−0.402</td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="0"></td>
+                  <td data-row="12" data-col="1">(0.415)</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="0">event_time = -16 × distance_used</td>
+                  <td data-row="13" data-col="1">−0.231</td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="0"></td>
+                  <td data-row="14" data-col="1">(0.384)</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="0">event_time = -15 × distance_used</td>
+                  <td data-row="15" data-col="1">0.145</td>
+                </tr>
+                <tr>
+                  <td data-row="16" data-col="0"></td>
+                  <td data-row="16" data-col="1">(0.328)</td>
+                </tr>
+                <tr>
+                  <td data-row="17" data-col="0">event_time = -14 × distance_used</td>
+                  <td data-row="17" data-col="1">0.004</td>
+                </tr>
+                <tr>
+                  <td data-row="18" data-col="0"></td>
+                  <td data-row="18" data-col="1">(0.328)</td>
+                </tr>
+                <tr>
+                  <td data-row="19" data-col="0">event_time = -13 × distance_used</td>
+                  <td data-row="19" data-col="1">−0.018</td>
+                </tr>
+                <tr>
+                  <td data-row="20" data-col="0"></td>
+                  <td data-row="20" data-col="1">(0.353)</td>
+                </tr>
+                <tr>
+                  <td data-row="21" data-col="0">event_time = -12 × distance_used</td>
+                  <td data-row="21" data-col="1">−0.126</td>
+                </tr>
+                <tr>
+                  <td data-row="22" data-col="0"></td>
+                  <td data-row="22" data-col="1">(0.405)</td>
+                </tr>
+                <tr>
+                  <td data-row="23" data-col="0">event_time = -11 × distance_used</td>
+                  <td data-row="23" data-col="1">−0.343</td>
+                </tr>
+                <tr>
+                  <td data-row="24" data-col="0"></td>
+                  <td data-row="24" data-col="1">(0.303)</td>
+                </tr>
+                <tr>
+                  <td data-row="25" data-col="0">event_time = -10 × distance_used</td>
+                  <td data-row="25" data-col="1">0.186</td>
+                </tr>
+                <tr>
+                  <td data-row="26" data-col="0"></td>
+                  <td data-row="26" data-col="1">(0.436)</td>
+                </tr>
+                <tr>
+                  <td data-row="27" data-col="0">event_time = -9 × distance_used</td>
+                  <td data-row="27" data-col="1">0.052</td>
+                </tr>
+                <tr>
+                  <td data-row="28" data-col="0"></td>
+                  <td data-row="28" data-col="1">(0.319)</td>
+                </tr>
+                <tr>
+                  <td data-row="29" data-col="0">event_time = -8 × distance_used</td>
+                  <td data-row="29" data-col="1">−0.014</td>
+                </tr>
+                <tr>
+                  <td data-row="30" data-col="0"></td>
+                  <td data-row="30" data-col="1">(0.334)</td>
+                </tr>
+                <tr>
+                  <td data-row="31" data-col="0">event_time = -7 × distance_used</td>
+                  <td data-row="31" data-col="1">−0.708+</td>
+                </tr>
+                <tr>
+                  <td data-row="32" data-col="0"></td>
+                  <td data-row="32" data-col="1">(0.368)</td>
+                </tr>
+                <tr>
+                  <td data-row="33" data-col="0">event_time = -6 × distance_used</td>
+                  <td data-row="33" data-col="1">−0.135</td>
+                </tr>
+                <tr>
+                  <td data-row="34" data-col="0"></td>
+                  <td data-row="34" data-col="1">(0.351)</td>
+                </tr>
+                <tr>
+                  <td data-row="35" data-col="0">event_time = -5 × distance_used</td>
+                  <td data-row="35" data-col="1">−0.119</td>
+                </tr>
+                <tr>
+                  <td data-row="36" data-col="0"></td>
+                  <td data-row="36" data-col="1">(0.367)</td>
+                </tr>
+                <tr>
+                  <td data-row="37" data-col="0">event_time = -4 × distance_used</td>
+                  <td data-row="37" data-col="1">−0.218</td>
+                </tr>
+                <tr>
+                  <td data-row="38" data-col="0"></td>
+                  <td data-row="38" data-col="1">(0.353)</td>
+                </tr>
+                <tr>
+                  <td data-row="39" data-col="0">event_time = -3 × distance_used</td>
+                  <td data-row="39" data-col="1">−0.088</td>
+                </tr>
+                <tr>
+                  <td data-row="40" data-col="0"></td>
+                  <td data-row="40" data-col="1">(0.347)</td>
+                </tr>
+                <tr>
+                  <td data-row="41" data-col="0">event_time = -2 × distance_used</td>
+                  <td data-row="41" data-col="1">−0.207</td>
+                </tr>
+                <tr>
+                  <td data-row="42" data-col="0"></td>
+                  <td data-row="42" data-col="1">(0.401)</td>
+                </tr>
+                <tr>
+                  <td data-row="43" data-col="0">event_time = 0 × distance_used</td>
+                  <td data-row="43" data-col="1">−1.297**</td>
+                </tr>
+                <tr>
+                  <td data-row="44" data-col="0"></td>
+                  <td data-row="44" data-col="1">(0.406)</td>
+                </tr>
+                <tr>
+                  <td data-row="45" data-col="0">event_time = 1 × distance_used</td>
+                  <td data-row="45" data-col="1">−1.412***</td>
+                </tr>
+                <tr>
+                  <td data-row="46" data-col="0"></td>
+                  <td data-row="46" data-col="1">(0.356)</td>
+                </tr>
+                <tr>
+                  <td data-row="47" data-col="0">event_time = 2 × distance_used</td>
+                  <td data-row="47" data-col="1">−1.015**</td>
+                </tr>
+                <tr>
+                  <td data-row="48" data-col="0"></td>
+                  <td data-row="48" data-col="1">(0.319)</td>
+                </tr>
+                <tr>
+                  <td data-row="49" data-col="0">event_time = 3 × distance_used</td>
+                  <td data-row="49" data-col="1">−0.906*</td>
+                </tr>
+                <tr>
+                  <td data-row="50" data-col="0"></td>
+                  <td data-row="50" data-col="1">(0.430)</td>
+                </tr>
+                <tr>
+                  <td data-row="51" data-col="0">event_time = 4 × distance_used</td>
+                  <td data-row="51" data-col="1">−0.816*</td>
+                </tr>
+                <tr>
+                  <td data-row="52" data-col="0"></td>
+                  <td data-row="52" data-col="1">(0.388)</td>
+                </tr>
+                <tr>
+                  <td data-row="53" data-col="0">event_time = 5 × distance_used</td>
+                  <td data-row="53" data-col="1">−1.344***</td>
+                </tr>
+                <tr>
+                  <td data-row="54" data-col="0"></td>
+                  <td data-row="54" data-col="1">(0.374)</td>
+                </tr>
+                <tr>
+                  <td data-row="55" data-col="0">event_time = 6 × distance_used</td>
+                  <td data-row="55" data-col="1">−1.504***</td>
+                </tr>
+                <tr>
+                  <td data-row="56" data-col="0"></td>
+                  <td data-row="56" data-col="1">(0.373)</td>
+                </tr>
+                <tr>
+                  <td data-row="57" data-col="0">event_time = 7 × distance_used</td>
+                  <td data-row="57" data-col="1">−1.230***</td>
+                </tr>
+                <tr>
+                  <td data-row="58" data-col="0"></td>
+                  <td data-row="58" data-col="1">(0.362)</td>
+                </tr>
+                <tr>
+                  <td data-row="59" data-col="0">event_time = 8 × distance_used</td>
+                  <td data-row="59" data-col="1">−1.320**</td>
+                </tr>
+                <tr>
+                  <td data-row="60" data-col="0"></td>
+                  <td data-row="60" data-col="1">(0.425)</td>
+                </tr>
+                <tr>
+                  <td data-row="61" data-col="0">event_time = 9 × distance_used</td>
+                  <td data-row="61" data-col="1">−0.716+</td>
+                </tr>
+                <tr>
+                  <td data-row="62" data-col="0"></td>
+                  <td data-row="62" data-col="1">(0.378)</td>
+                </tr>
+                <tr>
+                  <td data-row="63" data-col="0">event_time = 10 × distance_used</td>
+                  <td data-row="63" data-col="1">−0.770</td>
+                </tr>
+                <tr>
+                  <td data-row="64" data-col="0"></td>
+                  <td data-row="64" data-col="1">(0.473)</td>
+                </tr>
+                <tr>
+                  <td data-row="65" data-col="0">event_time = 11 × distance_used</td>
+                  <td data-row="65" data-col="1">−1.019**</td>
+                </tr>
+                <tr>
+                  <td data-row="66" data-col="0"></td>
+                  <td data-row="66" data-col="1">(0.371)</td>
+                </tr>
+                <tr>
+                  <td data-row="67" data-col="0">event_time = 12 × distance_used</td>
+                  <td data-row="67" data-col="1">−0.792+</td>
+                </tr>
+                <tr>
+                  <td data-row="68" data-col="0"></td>
+                  <td data-row="68" data-col="1">(0.410)</td>
+                </tr>
+                <tr>
+                  <td data-row="69" data-col="0">event_time = 13 × distance_used</td>
+                  <td data-row="69" data-col="1">−1.239***</td>
+                </tr>
+                <tr>
+                  <td data-row="70" data-col="0"></td>
+                  <td data-row="70" data-col="1">(0.363)</td>
+                </tr>
+                <tr>
+                  <td data-row="71" data-col="0">event_time = 14 × distance_used</td>
+                  <td data-row="71" data-col="1">−0.881**</td>
+                </tr>
+                <tr>
+                  <td data-row="72" data-col="0"></td>
+                  <td data-row="72" data-col="1">(0.291)</td>
+                </tr>
+                <tr>
+                  <td data-row="73" data-col="0">event_time = 15 × distance_used</td>
+                  <td data-row="73" data-col="1">−0.899*</td>
+                </tr>
+                <tr>
+                  <td data-row="74" data-col="0"></td>
+                  <td data-row="74" data-col="1">(0.358)</td>
+                </tr>
+                <tr>
+                  <td data-row="75" data-col="0">event_time = 16 × distance_used</td>
+                  <td data-row="75" data-col="1">−1.004*</td>
+                </tr>
+                <tr>
+                  <td data-row="76" data-col="0"></td>
+                  <td data-row="76" data-col="1">(0.396)</td>
+                </tr>
+                <tr>
+                  <td data-row="77" data-col="0">event_time = 17 × distance_used</td>
+                  <td data-row="77" data-col="1">−0.994**</td>
+                </tr>
+                <tr>
+                  <td data-row="78" data-col="0"></td>
+                  <td data-row="78" data-col="1">(0.325)</td>
+                </tr>
+                <tr>
+                  <td data-row="79" data-col="0">event_time = 18 × distance_used</td>
+                  <td data-row="79" data-col="1">−1.300***</td>
+                </tr>
+                <tr>
+                  <td data-row="80" data-col="0"></td>
+                  <td data-row="80" data-col="1">(0.374)</td>
+                </tr>
+                <tr>
+                  <td data-row="81" data-col="0">event_time = 19 × distance_used</td>
+                  <td data-row="81" data-col="1">−1.350**</td>
+                </tr>
+                <tr>
+                  <td data-row="82" data-col="0"></td>
+                  <td data-row="82" data-col="1">(0.435)</td>
+                </tr>
+                <tr>
+                  <td data-row="83" data-col="0">event_time = 20 × distance_used</td>
+                  <td data-row="83" data-col="1">−1.252*</td>
+                </tr>
+                <tr>
+                  <td data-row="84" data-col="0"></td>
+                  <td data-row="84" data-col="1">(0.505)</td>
+                </tr>
+                <tr>
+                  <td data-row="85" data-col="0">event_time = 21 × distance_used</td>
+                  <td data-row="85" data-col="1">−1.426***</td>
+                </tr>
+                <tr>
+                  <td data-row="86" data-col="0"></td>
+                  <td data-row="86" data-col="1">(0.341)</td>
+                </tr>
+                <tr>
+                  <td data-row="87" data-col="0">event_time = 22 × distance_used</td>
+                  <td data-row="87" data-col="1">−0.996**</td>
+                </tr>
+                <tr>
+                  <td data-row="88" data-col="0"></td>
+                  <td data-row="88" data-col="1">(0.375)</td>
+                </tr>
+                <tr>
+                  <td data-row="89" data-col="0">event_time = 23 × distance_used</td>
+                  <td data-row="89" data-col="1">−0.711+</td>
+                </tr>
+                <tr>
+                  <td data-row="90" data-col="0"></td>
+                  <td data-row="90" data-col="1">(0.416)</td>
+                </tr>
+                <tr>
+                  <td data-row="91" data-col="0">event_time = 24 × distance_used</td>
+                  <td data-row="91" data-col="1">−1.006**</td>
+                </tr>
+                <tr>
+                  <td data-row="92" data-col="0"></td>
+                  <td data-row="92" data-col="1">(0.344)</td>
+                </tr>
+                <tr>
+                  <td data-row="93" data-col="0">Num.Obs.</td>
+                  <td data-row="93" data-col="1">2328</td>
+                </tr>
+                <tr>
+                  <td data-row="94" data-col="0">R2</td>
+                  <td data-row="94" data-col="1">0.793</td>
+                </tr>
+                <tr>
+                  <td data-row="95" data-col="0">R2 Adj.</td>
+                  <td data-row="95" data-col="1">0.759</td>
+                </tr>
+                <tr>
+                  <td data-row="96" data-col="0">R2 Within</td>
+                  <td data-row="96" data-col="1">0.071</td>
+                </tr>
+                <tr>
+                  <td data-row="97" data-col="0">R2 Within Adj.</td>
+                  <td data-row="97" data-col="1">0.050</td>
+                </tr>
+                <tr>
+                  <td data-row="98" data-col="0">AIC</td>
+                  <td data-row="98" data-col="1">283.9</td>
+                </tr>
+                <tr>
+                  <td data-row="99" data-col="0">BIC</td>
+                  <td data-row="99" data-col="1">2193.8</td>
+                </tr>
+                <tr>
+                  <td data-row="100" data-col="0">RMSE</td>
+                  <td data-row="100" data-col="1">0.22</td>
+                </tr>
+                <tr>
+                  <td data-row="101" data-col="0">Std.Errors</td>
+                  <td data-row="101" data-col="1">by: domain</td>
+                </tr>
+                <tr>
+                  <td data-row="102" data-col="0">FE: domain</td>
+                  <td data-row="102" data-col="1">X</td>
+                </tr>
+                <tr>
+                  <td data-row="103" data-col="0">FE: date</td>
+                  <td data-row="103" data-col="1">X</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- postamble start -->
+  </body>
+
+</html>
+<!-- postamble end -->
+<!-- hack to avoid NA insertion in last line -->

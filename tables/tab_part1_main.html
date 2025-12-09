@@ -1,0 +1,272 @@
+<!-- preamble start -->
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinytable_dy1h6egk32juduaxhetr</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+<!-- preamble end -->
+
+    <script>
+
+      function styleCell_dy1h6egk32juduaxhetr(i, j, css_id) {
+          var table = document.getElementById("tinytable_dy1h6egk32juduaxhetr");
+          var cell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+          if (cell) {
+              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
+              cell.classList.add(css_id);
+          } else {
+              console.warn(`Cell at (${i}, ${j}) not found.`);
+          }
+      }
+      function spanCell_dy1h6egk32juduaxhetr(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_dy1h6egk32juduaxhetr");
+        const targetCell = table.querySelector(`[data-row="${i}"][data-col="${j}"]`);
+        if (!targetCell) {
+          console.warn(`Cell at (${i}, ${j}) not found.`);
+        }
+
+        // Get all cells that need to be removed
+        const cellsToRemove = [];
+        for (let r = 0; r < rowspan; r++) {
+          for (let c = 0; c < colspan; c++) {
+            if (r === 0 && c === 0) continue; // Skip the target cell
+            const cell = table.querySelector(`[data-row="${i + r}"][data-col="${j + c}"]`);
+            if (cell) {
+              cellsToRemove.push(cell);
+            }
+          }
+        }
+
+        // Remove all cells
+        cellsToRemove.forEach(cell => cell.remove());
+
+        // Set rowspan and colspan of the target cell if it exists
+        if (targetCell) {
+          targetCell.rowSpan = rowspan;
+          targetCell.colSpan = colspan;
+        }
+      }
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '33', j: 1 }, { i: '33', j: 2 },  ], css_id: 'tinytable_css_9pte3fb9cfepze756ncq',}, 
+          { positions: [ { i: '22', j: 2 }, { i: '22', j: 1 },  ], css_id: 'tinytable_css_tfx124yqhhfeso31cz9c',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '5', j: 1 }, { i: '6', j: 1 }, { i: '7', j: 1 }, { i: '4', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '12', j: 1 }, { i: '13', j: 1 }, { i: '14', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 }, { i: '17', j: 1 }, { i: '18', j: 1 }, { i: '19', j: 1 }, { i: '20', j: 1 }, { i: '8', j: 1 }, { i: '1', j: 2 }, { i: '23', j: 1 }, { i: '24', j: 1 }, { i: '25', j: 1 }, { i: '26', j: 1 }, { i: '27', j: 1 }, { i: '28', j: 1 }, { i: '29', j: 1 }, { i: '30', j: 1 }, { i: '31', j: 1 }, { i: '32', j: 1 }, { i: '12', j: 2 }, { i: '21', j: 1 }, { i: '14', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '6', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '11', j: 2 }, { i: '25', j: 2 }, { i: '13', j: 2 }, { i: '27', j: 2 }, { i: '15', j: 2 }, { i: '16', j: 2 }, { i: '17', j: 2 }, { i: '18', j: 2 }, { i: '19', j: 2 }, { i: '20', j: 2 }, { i: '21', j: 2 }, { i: '26', j: 2 }, { i: '23', j: 2 }, { i: '24', j: 2 }, { i: '29', j: 2 }, { i: '30', j: 2 }, { i: '31', j: 2 }, { i: '28', j: 2 }, { i: '32', j: 2 },  ], css_id: 'tinytable_css_3pmuie0rraxhlvd1a7aj',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 },  ], css_id: 'tinytable_css_rij5s7bkb3lz4ky0tmdb',}, 
+          { positions: [ { i: '33', j: 0 },  ], css_id: 'tinytable_css_mhte06ghjaqvnxsgf32s',}, 
+          { positions: [ { i: '22', j: 0 },  ], css_id: 'tinytable_css_bdjdzk4m74y6no26ucfw',}, 
+          { positions: [ { i: '1', j: 0 }, { i: '2', j: 0 }, { i: '3', j: 0 }, { i: '4', j: 0 }, { i: '5', j: 0 }, { i: '6', j: 0 }, { i: '7', j: 0 }, { i: '8', j: 0 }, { i: '9', j: 0 }, { i: '10', j: 0 }, { i: '11', j: 0 }, { i: '12', j: 0 }, { i: '13', j: 0 }, { i: '14', j: 0 }, { i: '15', j: 0 }, { i: '16', j: 0 }, { i: '17', j: 0 }, { i: '18', j: 0 }, { i: '19', j: 0 }, { i: '20', j: 0 }, { i: '21', j: 0 }, { i: '26', j: 0 }, { i: '23', j: 0 }, { i: '24', j: 0 }, { i: '25', j: 0 }, { i: '30', j: 0 }, { i: '27', j: 0 }, { i: '28', j: 0 }, { i: '29', j: 0 }, { i: '31', j: 0 }, { i: '32', j: 0 },  ], css_id: 'tinytable_css_d8d07r06hcy70whz39xw',}, 
+          { positions: [ { i: '0', j: 0 },  ], css_id: 'tinytable_css_8280idnotc5pavpiqnun',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  styleCell_dy1h6egk32juduaxhetr(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <style>
+      /* tinytable css entries after */
+      .table td.tinytable_css_9pte3fb9cfepze756ncq, .table th.tinytable_css_9pte3fb9cfepze756ncq { text-align: center; border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_tfx124yqhhfeso31cz9c, .table th.tinytable_css_tfx124yqhhfeso31cz9c { text-align: center; border-bottom: solid black 0.05em; }
+      .table td.tinytable_css_3pmuie0rraxhlvd1a7aj, .table th.tinytable_css_3pmuie0rraxhlvd1a7aj { text-align: center; }
+      .table td.tinytable_css_rij5s7bkb3lz4ky0tmdb, .table th.tinytable_css_rij5s7bkb3lz4ky0tmdb { text-align: center; border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_mhte06ghjaqvnxsgf32s, .table th.tinytable_css_mhte06ghjaqvnxsgf32s { text-align: left; border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_bdjdzk4m74y6no26ucfw, .table th.tinytable_css_bdjdzk4m74y6no26ucfw { text-align: left; border-bottom: solid black 0.05em; }
+      .table td.tinytable_css_d8d07r06hcy70whz39xw, .table th.tinytable_css_d8d07r06hcy70whz39xw { text-align: left; }
+      .table td.tinytable_css_8280idnotc5pavpiqnun, .table th.tinytable_css_8280idnotc5pavpiqnun { text-align: left; border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+    </style>
+    <div class="container">
+      <table class="table table-borderless" id="tinytable_dy1h6egk32juduaxhetr" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing='true'>
+        <thead>
+        <caption>Part I — Effect of ChatGPT Shock on the Price–Distance Gradient</caption>
+              <tr>
+                <th scope="col" data-row="0" data-col="0"> </th>
+                <th scope="col" data-row="0" data-col="1">Naive OLS</th>
+                <th scope="col" data-row="0" data-col="2">Domain+Time FE</th>
+              </tr>
+        </thead>
+        <tfoot><tr><td colspan='3'>+ p &lt; 0.1, * p &lt; 0.05, ** p &lt; 0.01, *** p &lt; 0.001</td></tr></tfoot>
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="0">(Intercept)</td>
+                  <td data-row="1" data-col="1">1.451***</td>
+                  <td data-row="1" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="0"></td>
+                  <td data-row="2" data-col="1">(0.109)</td>
+                  <td data-row="2" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="0">distance_used</td>
+                  <td data-row="3" data-col="1">−1.276***</td>
+                  <td data-row="3" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="0"></td>
+                  <td data-row="4" data-col="1">(0.174)</td>
+                  <td data-row="4" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="0">post</td>
+                  <td data-row="5" data-col="1">0.139***</td>
+                  <td data-row="5" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="0"></td>
+                  <td data-row="6" data-col="1">(0.040)</td>
+                  <td data-row="6" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="0">length</td>
+                  <td data-row="7" data-col="1">−0.000</td>
+                  <td data-row="7" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="0"></td>
+                  <td data-row="8" data-col="1">(0.007)</td>
+                  <td data-row="8" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="0">age_years</td>
+                  <td data-row="9" data-col="1">0.005</td>
+                  <td data-row="9" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="0"></td>
+                  <td data-row="10" data-col="1">(0.007)</td>
+                  <td data-row="10" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="0">is_com</td>
+                  <td data-row="11" data-col="1">0.362***</td>
+                  <td data-row="11" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="0"></td>
+                  <td data-row="12" data-col="1">(0.046)</td>
+                  <td data-row="12" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="0">has_hyphen</td>
+                  <td data-row="13" data-col="1">−0.187**</td>
+                  <td data-row="13" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="0"></td>
+                  <td data-row="14" data-col="1">(0.059)</td>
+                  <td data-row="14" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="0">has_digit</td>
+                  <td data-row="15" data-col="1">−0.103+</td>
+                  <td data-row="15" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="16" data-col="0"></td>
+                  <td data-row="16" data-col="1">(0.053)</td>
+                  <td data-row="16" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="17" data-col="0">exact_match</td>
+                  <td data-row="17" data-col="1">0.070</td>
+                  <td data-row="17" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="18" data-col="0"></td>
+                  <td data-row="18" data-col="1">(0.082)</td>
+                  <td data-row="18" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="19" data-col="0">distance_used × post</td>
+                  <td data-row="19" data-col="1">−0.817***</td>
+                  <td data-row="19" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="20" data-col="0"></td>
+                  <td data-row="20" data-col="1">(0.114)</td>
+                  <td data-row="20" data-col="2"></td>
+                </tr>
+                <tr>
+                  <td data-row="21" data-col="0">post × distance_used</td>
+                  <td data-row="21" data-col="1"></td>
+                  <td data-row="21" data-col="2">−0.953***</td>
+                </tr>
+                <tr>
+                  <td data-row="22" data-col="0"></td>
+                  <td data-row="22" data-col="1"></td>
+                  <td data-row="22" data-col="2">(0.080)</td>
+                </tr>
+                <tr>
+                  <td data-row="23" data-col="0">Num.Obs.</td>
+                  <td data-row="23" data-col="1">2372</td>
+                  <td data-row="23" data-col="2">2371</td>
+                </tr>
+                <tr>
+                  <td data-row="24" data-col="0">R2</td>
+                  <td data-row="24" data-col="1">0.336</td>
+                  <td data-row="24" data-col="2">0.790</td>
+                </tr>
+                <tr>
+                  <td data-row="25" data-col="0">R2 Adj.</td>
+                  <td data-row="25" data-col="1">0.333</td>
+                  <td data-row="25" data-col="2">0.761</td>
+                </tr>
+                <tr>
+                  <td data-row="26" data-col="0">R2 Within</td>
+                  <td data-row="26" data-col="1"></td>
+                  <td data-row="26" data-col="2">0.058</td>
+                </tr>
+                <tr>
+                  <td data-row="27" data-col="0">R2 Within Adj.</td>
+                  <td data-row="27" data-col="1"></td>
+                  <td data-row="27" data-col="2">0.057</td>
+                </tr>
+                <tr>
+                  <td data-row="28" data-col="0">AIC</td>
+                  <td data-row="28" data-col="1">2401.3</td>
+                  <td data-row="28" data-col="2">220.2</td>
+                </tr>
+                <tr>
+                  <td data-row="29" data-col="0">BIC</td>
+                  <td data-row="29" data-col="1">2459.0</td>
+                  <td data-row="29" data-col="2">1882.3</td>
+                </tr>
+                <tr>
+                  <td data-row="30" data-col="0">RMSE</td>
+                  <td data-row="30" data-col="1">0.40</td>
+                  <td data-row="30" data-col="2">0.22</td>
+                </tr>
+                <tr>
+                  <td data-row="31" data-col="0">Std.Errors</td>
+                  <td data-row="31" data-col="1">by: domain</td>
+                  <td data-row="31" data-col="2">by: domain</td>
+                </tr>
+                <tr>
+                  <td data-row="32" data-col="0">FE: domain</td>
+                  <td data-row="32" data-col="1"></td>
+                  <td data-row="32" data-col="2">X</td>
+                </tr>
+                <tr>
+                  <td data-row="33" data-col="0">FE: date</td>
+                  <td data-row="33" data-col="1"></td>
+                  <td data-row="33" data-col="2">X</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- postamble start -->
+  </body>
+
+</html>
+<!-- postamble end -->
+<!-- hack to avoid NA insertion in last line -->

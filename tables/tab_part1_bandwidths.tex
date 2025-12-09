@@ -1,0 +1,30 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Appendix — Part I Robustness: Alternative Event Windows},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{2-4}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{4}={1-4}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& ±6m & ±12m & ±24m \\ \midrule %% TinyTableHeader
+post × distance\_used & \num{-0.998}*** & \num{-0.995}*** & \num{-0.962}*** \\
+& (\num{0.166}) & (\num{0.116}) & (\num{0.081}) \\
+Num.Obs. & \num{582} & \num{1202} & \num{2328} \\
+R2 & \num{0.838} & \num{0.800} & \num{0.791} \\
+R2 Adj. & \num{0.756} & \num{0.746} & \num{0.761} \\
+R2 Within & \num{0.073} & \num{0.063} & \num{0.059} \\
+R2 Within Adj. & \num{0.070} & \num{0.062} & \num{0.058} \\
+AIC & \num{152.8} & \num{240.3} & \num{224.7} \\
+BIC & \num{1008.7} & \num{1548.9} & \num{1875.7} \\
+RMSE & \num{0.20} & \num{0.22} & \num{0.22} \\
+Std.Errors & by: domain & by: domain & by: domain \\
+FE: domain & X & X & X \\
+FE: date & X & X & X \\
+\bottomrule
+\end{talltblr}
+\end{table}

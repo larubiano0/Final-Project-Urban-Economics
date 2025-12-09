@@ -1,0 +1,30 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Appendix — Part I Robustness: Placebo Shock Dates},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{2-4}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{4}={1-4}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Placebo 2021-06 & Placebo 2021-11 & Placebo 2022-03 \\ \midrule %% TinyTableHeader
+post\_pl × distance\_used & \num{-0.521}*** & \num{-0.634}*** & \num{-0.723}*** \\
+& (\num{0.128}) & (\num{0.091}) & (\num{0.086}) \\
+Num.Obs. & \num{2371} & \num{2371} & \num{2371} \\
+R2 & \num{0.779} & \num{0.781} & \num{0.783} \\
+R2 Adj. & \num{0.748} & \num{0.751} & \num{0.754} \\
+R2 Within & \num{0.007} & \num{0.018} & \num{0.028} \\
+R2 Within Adj. & \num{0.007} & \num{0.018} & \num{0.027} \\
+AIC & \num{343.8} & \num{317.6} & \num{293.9} \\
+BIC & \num{2005.9} & \num{1979.7} & \num{1955.9} \\
+RMSE & \num{0.23} & \num{0.23} & \num{0.23} \\
+Std.Errors & by: domain & by: domain & by: domain \\
+FE: domain & X & X & X \\
+FE: date & X & X & X \\
+\bottomrule
+\end{talltblr}
+\end{table}

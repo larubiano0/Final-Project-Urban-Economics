@@ -1,0 +1,43 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Appendix — Part II Robustness: Heterogeneity by TLD, Age, and Length},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2-7}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{18}={1-7}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& .com only & Non-.com & Younger domains & Older domains & Shorter domains & Longer domains \\ \midrule %% TinyTableHeader
+distance\_used & \num{-1.486}*** & \num{-1.360}+ & \num{-1.570}*** & \num{-0.984}+ & \num{-1.118}** & \num{-2.131}* \\
+& (\num{0.401}) & (\num{0.687}) & (\num{0.447}) & (\num{0.542}) & (\num{0.374}) & (\num{0.849}) \\
+length & \num{0.001} & \num{0.023} & \num{0.016} & \num{-0.004} & \num{-0.011} & \num{0.046}+ \\
+& (\num{0.014}) & (\num{0.030}) & (\num{0.020}) & (\num{0.016}) & (\num{0.022}) & (\num{0.027}) \\
+age\_years & \num{-0.005} & \num{0.000} & \num{0.043} & \num{-0.015} & \num{-0.005} & \num{0.004} \\
+& (\num{0.012}) & (\num{0.018}) & (\num{0.078}) & (\num{0.018}) & (\num{0.016}) & (\num{0.015}) \\
+has\_hyphen & \num{0.003} & \num{0.198} & \num{-0.009} & \num{0.139} & \num{-0.770}*** & \num{0.263} \\
+& (\num{0.307}) & (\num{0.413}) & (\num{0.347}) & (\num{0.329}) & (\num{0.225}) & (\num{0.467}) \\
+has\_digit & \num{-0.123} & \num{0.025} & \num{-0.129} & \num{-0.061} & \num{-0.166} & \num{0.035} \\
+& (\num{0.088}) & (\num{0.176}) & (\num{0.097}) & (\num{0.117}) & (\num{0.103}) & (\num{0.127}) \\
+token\_count & \num{-0.078} & \num{-0.235} & \num{-0.145} & \num{-0.128} & \num{0.681}*** & \num{-0.271} \\
+& (\num{0.200}) & (\num{0.276}) & (\num{0.226}) & (\num{0.218}) & (\num{0.139}) & (\num{0.259}) \\
+exact\_match & \num{-0.148} &  &  & \num{-0.024} & \num{-0.116} &  \\
+& (\num{0.403}) &  &  & (\num{0.468}) & (\num{0.517}) &  \\
+is\_com &  &  & \num{0.367}*** & \num{0.490}*** & \num{0.483}*** & \num{0.307}** \\
+&  &  & (\num{0.108}) & (\num{0.096}) & (\num{0.088}) & (\num{0.111}) \\
+Num.Obs. & \num{217} & \num{77} & \num{147} & \num{147} & \num{179} & \num{115} \\
+R2 & \num{0.192} & \num{0.139} & \num{0.284} & \num{0.272} & \num{0.275} & \num{0.328} \\
+R2 Adj. & \num{0.145} & \num{-0.007} & \num{0.220} & \num{0.201} & \num{0.218} & \num{0.249} \\
+R2 Within & \num{0.095} & \num{0.070} & \num{0.189} & \num{0.219} & \num{0.238} & \num{0.172} \\
+R2 Within Adj. & \num{0.064} & \num{-0.015} & \num{0.146} & \num{0.172} & \num{0.201} & \num{0.115} \\
+AIC & \num{340.5} & \num{133.7} & \num{248.5} & \num{229.6} & \num{283.3} & \num{188.0} \\
+BIC & \num{384.4} & \num{161.8} & \num{287.4} & \num{271.4} & \num{327.9} & \num{223.7} \\
+RMSE & \num{0.50} & \num{0.49} & \num{0.52} & \num{0.48} & \num{0.49} & \num{0.49} \\
+Std.Errors & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust \\
+FE: cluster\_keyword & X & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+\end{table}

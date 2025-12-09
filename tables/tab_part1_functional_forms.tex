@@ -1,0 +1,34 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Appendix — Part I Robustness: Functional Form},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{2-4}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{8}={1-4}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Linear & Quadratic & Log(1+d) \\ \midrule %% TinyTableHeader
+post × distance\_used & \num{-0.953}*** & \num{-1.164}*** &  \\
+& (\num{0.080}) & (\num{0.341}) &  \\
+post × dist\_sq &  & \num{0.288} &  \\
+&  & (\num{0.451}) &  \\
+post × dist\_log &  &  & \num{-1.290}*** \\
+&  &  & (\num{0.112}) \\
+Num.Obs. & \num{2371} & \num{2371} & \num{2371} \\
+R2 & \num{0.790} & \num{0.790} & \num{0.790} \\
+R2 Adj. & \num{0.761} & \num{0.761} & \num{0.761} \\
+R2 Within & \num{0.058} & \num{0.058} & \num{0.058} \\
+R2 Within Adj. & \num{0.057} & \num{0.057} & \num{0.057} \\
+AIC & \num{220.2} & \num{221.7} & \num{219.8} \\
+BIC & \num{1882.3} & \num{1889.6} & \num{1881.8} \\
+RMSE & \num{0.22} & \num{0.22} & \num{0.22} \\
+Std.Errors & by: domain & by: domain & by: domain \\
+FE: domain & X & X & X \\
+FE: date & X & X & X \\
+\bottomrule
+\end{talltblr}
+\end{table}

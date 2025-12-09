@@ -1,0 +1,47 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Appendix — Part II Robustness: Functional Form},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{2-4}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{22}={1-4}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Linear & Quadratic & Log(1+d) \\ \midrule %% TinyTableHeader
+distance\_used & \num{-1.360}*** & \num{-0.282} &  \\
+& (\num{0.336}) & (\num{0.953}) &  \\
+length & \num{0.008} & \num{0.005} & \num{0.008} \\
+& (\num{0.012}) & (\num{0.013}) & (\num{0.013}) \\
+age\_years & \num{-0.004} & \num{-0.003} & \num{-0.004} \\
+& (\num{0.010}) & (\num{0.010}) & (\num{0.010}) \\
+is\_com & \num{0.417}*** & \num{0.422}*** & \num{0.416}*** \\
+& (\num{0.071}) & (\num{0.071}) & (\num{0.072}) \\
+has\_hyphen & \num{0.063} & \num{0.062} & \num{0.065} \\
+& (\num{0.237}) & (\num{0.236}) & (\num{0.237}) \\
+has\_digit & \num{-0.076} & \num{-0.075} & \num{-0.077} \\
+& (\num{0.079}) & (\num{0.080}) & (\num{0.079}) \\
+token\_count & \num{-0.125} & \num{-0.126} & \num{-0.126} \\
+& (\num{0.154}) & (\num{0.154}) & (\num{0.155}) \\
+exact\_match & \num{-0.036} & \num{0.120} & \num{-0.086} \\
+& (\num{0.435}) & (\num{0.445}) & (\num{0.438}) \\
+dist\_sq &  & \num{-1.453} &  \\
+&  & (\num{1.221}) &  \\
+dist\_log &  &  & \num{-1.799}*** \\
+&  &  & (\num{0.453}) \\
+Num.Obs. & \num{294} & \num{294} & \num{294} \\
+R2 & \num{0.254} & \num{0.257} & \num{0.252} \\
+R2 Adj. & \num{0.220} & \num{0.219} & \num{0.218} \\
+R2 Within & \num{0.189} & \num{0.191} & \num{0.187} \\
+R2 Within Adj. & \num{0.165} & \num{0.165} & \num{0.163} \\
+AIC & \num{462.6} & \num{463.7} & \num{463.4} \\
+BIC & \num{514.2} & \num{518.9} & \num{514.9} \\
+RMSE & \num{0.51} & \num{0.51} & \num{0.51} \\
+Std.Errors & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust \\
+FE: cluster\_keyword & X & X & X \\
+\bottomrule
+\end{talltblr}
+\end{table}

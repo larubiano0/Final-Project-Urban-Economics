@@ -1,0 +1,28 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Part II — Relationship Between Keyword Popularity and Gradient Steepness},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+column{2}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{6}={1-2}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Delta\_k on popularity \\ \midrule %% TinyTableHeader
+(Intercept) & \num{-0.888} \\
+& (\num{0.875}) \\
+S\_k & \num{-1.220} \\
+& (\num{1.414}) \\
+Num.Obs. & \num{6} \\
+R2 & \num{0.096} \\
+R2 Adj. & \num{-0.130} \\
+AIC & \num{16.4} \\
+BIC & \num{16.0} \\
+RMSE & \num{0.68} \\
+Std.Errors & Heteroskedasticity-robust \\
+\bottomrule
+\end{talltblr}
+\end{table}

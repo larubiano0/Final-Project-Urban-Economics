@@ -1,0 +1,45 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Part II — Cross-Sectional Price–Distance Gradients Across Keywords},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2-8}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{20}={1-8}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Pooled + Category FE & Cluster: chat & Cluster: crypto & Cluster: finance & Cluster: hotel & Cluster: lawyers & Cluster: travel \\ \midrule %% TinyTableHeader
+distance\_used & \num{-1.360}*** & \num{-0.888} & \num{-2.451}* & \num{-2.662} & \num{-1.556} & \num{-1.446} & \num{-0.769} \\
+& (\num{0.336}) & (\num{0.590}) & (\num{0.883}) & (\num{1.746}) & (\num{1.160}) & (\num{1.332}) & (\num{0.637}) \\
+length & \num{0.008} & \num{0.036} & \num{-0.056}* & \num{-0.059} & \num{0.009} & \num{0.006} & \num{0.040} \\
+& (\num{0.012}) & (\num{0.022}) & (\num{0.024}) & (\num{0.052}) & (\num{0.032}) & (\num{0.028}) & (\num{0.048}) \\
+age\_years & \num{-0.004} & \num{-0.007} & \num{0.016} & \num{0.024} & \num{-0.025} & \num{-0.024} & \num{0.113}* \\
+& (\num{0.010}) & (\num{0.025}) & (\num{0.027}) & (\num{0.016}) & (\num{0.029}) & (\num{0.024}) & (\num{0.053}) \\
+is\_com & \num{0.417}*** & \num{0.610}*** & \num{0.607}*** & \num{0.193} & \num{0.432}* & \num{0.494}** & \num{0.155} \\
+& (\num{0.071}) & (\num{0.134}) & (\num{0.146}) & (\num{0.242}) & (\num{0.180}) & (\num{0.150}) & (\num{0.228}) \\
+has\_hyphen & \num{0.063} & \num{0.089} & \num{0.285} & \num{-0.091} & \num{0.439} & \num{-0.168} & \num{1.191} \\
+& (\num{0.237}) & (\num{0.496}) & (\num{0.473}) & (\num{1.020}) & (\num{0.355}) & (\num{0.372}) & (\num{0.725}) \\
+has\_digit & \num{-0.076} & \num{-0.107} & \num{-0.140} & \num{0.098} & \num{-0.081} & \num{-0.148} & \num{-0.328} \\
+& (\num{0.079}) & (\num{0.168}) & (\num{0.198}) & (\num{0.346}) & (\num{0.175}) & (\num{0.165}) & (\num{0.216}) \\
+token\_count & \num{-0.125} & \num{-0.170} & \num{-0.091} & \num{0.021} & \num{-0.393}+ & \num{-0.001} & \num{-1.232}* \\
+& (\num{0.154}) & (\num{0.359}) & (\num{0.303}) & (\num{0.573}) & (\num{0.223}) & (\num{0.255}) & (\num{0.595}) \\
+exact\_match & \num{-0.036} & \num{0.837}** &  & \num{-1.623}+ &  &  &  \\
+& (\num{0.435}) & (\num{0.294}) &  & (\num{0.914}) &  &  &  \\
+(Intercept) &  & \num{1.154}** & \num{2.532}*** & \num{3.026}** & \num{2.030}*** & \num{1.630}*** & \num{1.814}** \\
+&  & (\num{0.411}) & (\num{0.457}) & (\num{0.934}) & (\num{0.308}) & (\num{0.429}) & (\num{0.500}) \\
+Num.Obs. & \num{294} & \num{77} & \num{32} & \num{45} & \num{45} & \num{59} & \num{36} \\
+R2 & \num{0.254} & \num{0.361} & \num{0.507} & \num{0.147} & \num{0.281} & \num{0.184} & \num{0.313} \\
+R2 Adj. & \num{0.220} & \num{0.286} & \num{0.363} & \num{-0.043} & \num{0.145} & \num{0.072} & \num{0.141} \\
+R2 Within & \num{0.189} &  &  &  &  &  &  \\
+R2 Within Adj. & \num{0.165} &  &  &  &  &  &  \\
+AIC & \num{462.6} & \num{116.4} & \num{39.8} & \num{107.1} & \num{67.4} & \num{97.7} & \num{54.5} \\
+BIC & \num{514.2} & \num{137.5} & \num{51.6} & \num{123.4} & \num{81.8} & \num{114.3} & \num{67.2} \\
+RMSE & \num{0.51} & \num{0.46} & \num{0.35} & \num{0.65} & \num{0.43} & \num{0.48} & \num{0.41} \\
+Std.Errors & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust & Heteroskedasticity-robust \\
+FE: cluster\_keyword & X &  &  &  &  &  &  \\
+\bottomrule
+\end{talltblr}
+\end{table}
