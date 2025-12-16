@@ -70,15 +70,6 @@ We operationalize “virtual location” using modern **text embeddings** and co
 - **Cross-section (multiple clusters):**
   - `multi_keyword_cross_section.csv`: one observation per domain (sales observed only for transacted domains if the DGP includes selection).
 
-### Key variables (typical)
-- `domain`: domain string
-- `cluster_keyword`: cluster assignment (keyword)
-- `embedding_distance`: semantic distance from the cluster center
-- `distance_used`: distance used in estimation (possibly identical to embedding distance)
-- `log_price` / `log_p_obs`: observed log transaction price (when sold)
-- `sold`: sale indicator
-- Domain covariates: `is_com`, `length`, `age_years`, `has_hyphen`, `has_digit`, `token_count`, `exact_match`
-
 ---
 
 ## Semantic Distance (“Virtual Location”)
